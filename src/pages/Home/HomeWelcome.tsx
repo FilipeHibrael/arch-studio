@@ -11,7 +11,7 @@ const HomeWelcome = ({ data }: { data: IHomePageWelcome }) => {
           <h2 className="font-bold text-6xl max-w-xs mb-6">{data.heading}</h2>
           <div className="flex flex-col gap-4">
             {Object.values(data.paragraphs).map((paragraph, index) => (
-              <p key={index} className=" text-xl text-ColorDarkGrey max-w-lg">
+              <p key={index} className="text-xl text-ColorDarkGrey max-w-lg">
                 {paragraph}
               </p>
             ))}

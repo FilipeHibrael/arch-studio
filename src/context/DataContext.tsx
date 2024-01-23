@@ -23,14 +23,14 @@ export type IHomePageWelcome = {
   };
 };
 
-type IHero = {
+export type IHero = {
   image: IImage;
   headingLarge: string;
   heading: string;
   paragraph: string;
 };
 
-type IHeritage = {
+export type IHeritage = {
   heritageImg: string;
   heading: string;
   paragraphs: {
@@ -40,19 +40,21 @@ type IHeritage = {
   };
 };
 
-type ILeaderInfo = {
+export type ILeaderInfo = {
   name: string;
   role: string;
   img: string;
 };
 
+export type ILeaders = {
+  heading: string;
+  leadersInfo: ILeaderInfo[];
+};
+
 type IAboutData = {
   hero: IHero;
   heritage: IHeritage;
-  leaders: {
-    heading: string;
-    leadersInfo: ILeaderInfo[];
-  };
+  leaders: ILeaders;
 };
 
 type IOffice = {
