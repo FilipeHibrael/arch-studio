@@ -16,7 +16,7 @@ const HomeBanner = ({ data }: { data: IImage }) => {
           <h2 className="font-bold text-6xl text-ColorWhite max-w-xs mb-8">
             Small team, big ideas
           </h2>
-          <Button>About Us</Button>
+          <Button to='/about-us' >About Us</Button>
         </div>
       </div>
     </div>

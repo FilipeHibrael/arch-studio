@@ -1,6 +1,19 @@
+import { Link, useLocation, useParams } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import NavLinks from '../components/NavLinks';
+import React from 'react';
 
 const Header = () => {
+  const [pageName, setPageName] = React.useState('');
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    if (pathname === '/portfolio') setPageName('PORTFOLIO');
+    else if (pathname === '/about-us') setPageName('ABOUT US');
+    else if (pathname === '/contact') setPageName('CONTACT');
+    else setPageName('HOME');
+  }, [pathname]);
+
   return (
     <header
       className="flex items-center my-12 relative 
@@ -9,30 +22,14 @@ const Header = () => {
     >
       <span
         className="font-light text-ColorGrey text-2xl tracking-[0.8rem] 
-      rotate-90 absolute -left-40 -bottom-32"
+        origin-top-left rotate-90 absolute -left-[88px] -bottom-20"
       >
-        HOME
+        {pageName}
       </span>
-      <img src={logo} alt="Arch Studio Logo" />
-      <nav>
-        <ul className="flex gap-12 text-xl ml-24 text-ColorDarkGrey">
-          <li>
-            <a className="py-4 hover:text-ColorDark transition-colors" href="#">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a className="py-4 hover:text-ColorDark transition-colors" href="#">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a className="py-4 hover:text-ColorDark transition-colors" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <Link to="/">
+        <img src={logo} alt="Arch Studio Logo" />
+      </Link>
+      <NavLinks />
     </header>
   );
 };
