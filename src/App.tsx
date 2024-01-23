@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from './pages/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home';
+import Home from './pages/Home/Home';
 import { DataContextProvider } from './context/DataContext';
 
 export default function App() {

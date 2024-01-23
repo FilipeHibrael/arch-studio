@@ -1,7 +1,7 @@
 import React from 'react';
 import useFetch from '../hooks/useFetch';
 
-type IImage = {
+export type IImage = {
   desktop: string;
   tablet: string;
   mobile: string;
@@ -13,7 +13,7 @@ type ISlide = {
   images: IImage;
 };
 
-type IHomePageWelcome = {
+export type IHomePageWelcome = {
   img: string;
   heading: string;
   paragraphs: {
@@ -84,7 +84,7 @@ type IContactData = {
   sectionDetailsAndMap: ISectionDetailsAndMap;
 };
 
-type IPortfolioItem = {
+export type IPortfolioItem = {
   id: number;
   title: string;
   date: string;
