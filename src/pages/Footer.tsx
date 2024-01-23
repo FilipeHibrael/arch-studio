@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // @ts-ignore
 import ArchLogo from '../assets/logo-white.svg?react';
 import Button from '../components/Button';
@@ -12,9 +13,9 @@ const Footer = () => {
       }}
       className="grid items-center bg-ColorLightGrey"
     >
-      <div className="bg-ColorDark px-10 py-16">
+      <Link to='/' className="bg-ColorDark px-10 py-16">
         <ArchLogo />
-      </div>
+      </Link>
       <NavLinks/>
       <Button to='/portfolio' >See Our Portfolio</Button>
     </footer>

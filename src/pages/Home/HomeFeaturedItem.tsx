@@ -1,5 +1,6 @@
 import React from 'react';
 import { IPortfolioItem } from '../../context/DataContext';
+import { Link } from 'react-router-dom';
 
 type IHomeFeaturedItem = {
   data: IPortfolioItem;
@@ -20,9 +21,9 @@ const HomeFeaturedItem = ({ data, index }: IHomeFeaturedItem) => {
           {index + 1}
         </span>
         <h3 className="text-ColorWhite font-bold text-4xl">{data.title}</h3>
-        <a href="#" className="text-ColorWhite py-1">
+        <Link className="text-ColorWhite py-1" to="/portfolio">
           View All Projects
-        </a>
+        </Link>
       </div>
     </div>
   );
