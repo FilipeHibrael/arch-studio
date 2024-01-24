@@ -76,7 +76,7 @@ type IDefaultMap = {
   zoom: number;
 };
 
-type ISectionDetailsAndMap = {
+export type ISectionDetailsAndMap = {
   offices: IOffice[];
   defaultMap: IDefaultMap;
 };

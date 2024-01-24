@@ -2,6 +2,7 @@ import { useData } from '../../context/DataContext';
 import ContactDetails from './ContactDetails';
 import ContactForm from './ContactForm';
 import ContactHero from './ContactHero';
+import ContactMap from './ContactMap';
 
 const Contact = () => {
   const { data, loading, error } = useData();
@@ -11,7 +12,8 @@ const Contact = () => {
     <section>
       <ContactHero data={data.contactData.hero} />
       <ContactDetails data={data.contactData.sectionDetailsAndMap.offices} />
-      <ContactForm/>
+      <ContactMap data={data.contactData.sectionDetailsAndMap} />
+      <ContactForm />
     </section>
   );
 };
