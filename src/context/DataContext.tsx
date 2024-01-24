@@ -57,7 +57,7 @@ type IAboutData = {
   leaders: ILeaders;
 };
 
-type IOffice = {
+export type IOffice = {
   name: string;
   mail: string;
   address: string;

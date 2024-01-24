@@ -6,6 +6,7 @@ import { DataContextProvider } from './context/DataContext';
 import Footer from './pages/Footer';
 import Portfolio from './pages/Portfolio/Portfolio';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Contact from './pages/Contact/Contact';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio/>} />
             <Route path="/about-us" element={<AboutUs/>} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
           <Footer />
         </DataContextProvider>

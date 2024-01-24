@@ -18,10 +18,10 @@ const AboutUsLeadersItem = ({ data }: { data: ILeaderInfo }) => {
         opacity-0 translate-y-8 absolute left-0 top-0 group-hover:opacity-100 
         group-hover:translate-y-0 transition-all duration-300"
         >
-          <a href="#">
+          <a href="#" onClick={(event) => event.preventDefault()}>
             <LinkedinIcon />
           </a>
-          <a href="#">
+          <a href="#" onClick={(event) => event.preventDefault()}>
             <TwitterIcon />
           </a>
         </div>
