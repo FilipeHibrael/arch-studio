@@ -7,7 +7,7 @@ export type IImage = {
   mobile: string;
 };
 
-type ISlide = {
+export type ISlide = {
   title: string;
   content: string;
   images: IImage;
