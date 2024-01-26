@@ -15,13 +15,16 @@ const Header = () => {
 
   return (
     <header
-      className="flex items-center my-12 relative 
+      className="flex items-center gap-24 my-12 relative 
     before:block before:bg-ColorGrey before:w-[1px] before:h-24 
-    before:-left-[102px] before:-top-12 before:absolute"
+    before:-left-[102px] before:-top-12 before:absolute 
+    xl:before:-left-12 md:before:-left-6 sm:gap-0 sm:justify-between 
+    2sm:before:hidden 2sm:my-6 2sm:px-4"
     >
       <span
         className="font-light text-ColorGrey text-2xl tracking-[0.8rem] 
-        origin-top-left rotate-90 absolute -left-[88px] -bottom-20"
+        origin-top-left rotate-90 absolute -left-[88px] -bottom-20 
+        xl:-left-[34px] md:text-xl md:-left-[12px] 2sm:hidden"
       >
         {pageName}
       </span>
@@ -29,7 +32,7 @@ const Header = () => {
         <img src={logo} alt="Arch Studio Logo" />
       </Link>
       <nav>
-        <ul className="flex gap-12 text-xl ml-24 text-ColorDarkGrey">
+        <ul className="flex gap-12 text-xl text-ColorDarkGrey sm:gap-4">
           <li>
             <Link
               className="py-4 hover:text-ColorDark transition-colors"
