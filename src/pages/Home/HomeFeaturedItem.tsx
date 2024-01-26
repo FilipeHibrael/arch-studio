@@ -11,7 +11,7 @@ const HomeFeaturedItem = ({ data, index }: IHomeFeaturedItem) => {
   return (
     <div
       style={{ backgroundImage: `url(${data.image.desktop})` }}
-      className="w-full h-[540px] bg-cover bg-bottom"
+      className="w-full h-[540px] bg-cover bg-bottom md:bg-center"
     >
       <div
         style={{ background: 'rgba(0, 0, 0, 0.2)' }}

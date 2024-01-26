@@ -19,7 +19,7 @@ const HomeSlide = ({ data }: { data: ISlide[] }) => {
   }, [currentIndex]);
 
   return (
-    <div>
+    <div className='lg:mb-24'>
       <div className='grid'>
         {data.map((item, index) => (
           <HomeSlideItem
@@ -29,7 +29,7 @@ const HomeSlide = ({ data }: { data: ISlide[] }) => {
           />
         ))}
       </div>
-      <div className="-translate-y-20 -translate-x-20">
+      <div className="-translate-y-20 -translate-x-20 xl:hidden">
         {data.map((_, index) => (
           <button
             key={index}

@@ -15,6 +15,14 @@ export default {
         sans: 'League Spartan, sans-serif',
       },
     },
+    screens: {
+      '2xl': { max: '1340px' },
+      xl: { max: '1280px' },
+      lg: { max: '1080px' },
+      md: { max: '860px' },
+      sm: { max: '680px' },
+      '2sm': { max: '480px' },
+    },
   },
   plugins: [],
 };

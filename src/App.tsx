@@ -10,7 +10,7 @@ import Contact from './pages/Contact/Contact';
 
 export default function App() {
   return (
-    <div className="max-w-[1440px] mx-auto px-40">
+    <div className="max-w-[1440px] mx-auto px-40 xl:px-24 md:px-12 2sm:px-0">
       <BrowserRouter>
         <DataContextProvider>
           <Header />

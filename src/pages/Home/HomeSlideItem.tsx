@@ -19,7 +19,7 @@ const HomeSlideItem = ({ data, isVisible }: IHomeSlideItem) => {
       <img
         className={
           (isVisible ? 'opacity-40' : 'opacity-20') +
-          ' object-cover object-bottom w-full max-h-[680px] transition-opacity duration-500'
+          ' object-cover object-bottom w-full h-[680px] transition-opacity duration-500 sm:h-[580px]'
         }
         src={data.images.desktop}
         alt="Slide image"
@@ -30,10 +30,10 @@ const HomeSlideItem = ({ data, isVisible }: IHomeSlideItem) => {
             (isVisible
               ? 'translate-x-0 opacity-100'
               : '-translate-x-6 opacity-0') +
-            ' ml-48 transition-all duration-500'
+            ' ml-48 transition-all duration-500 lg:mx-auto md:px-6 2sm:flex 2sm:flex-col 2sm:items-center 2sm:text-center'
           }
         >
-          <h2 className="font-bold text-8xl text-ColorWhite max-w-lg mb-4">
+          <h2 className="font-bold text-8xl text-ColorWhite max-w-lg mb-4 sm:text-6xl">
             {data.title}
           </h2>
           <p className="text-xl text-ColorWhite max-w-lg mb-6">
