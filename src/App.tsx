@@ -10,15 +10,15 @@ import Contact from './pages/Contact/Contact';
 
 export default function App() {
   return (
-    <div className="max-w-[1440px] mx-auto px-40 xl:px-24 md:px-12 2sm:px-0">
+    <div className="max-w-[1440px] mx-auto px-40 overflow-hidden xl:px-24 md:px-12 2sm:px-0">
       <BrowserRouter>
         <DataContextProvider>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio/>} />
-            <Route path="/about-us" element={<AboutUs/>} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </DataContextProvider>
