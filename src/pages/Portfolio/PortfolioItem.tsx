@@ -5,7 +5,7 @@ const PortfolioItem = ({ data }: { data: IPortfolioItem }) => {
   return (
     <div
       style={{ backgroundImage: `url(${data.image.desktop})` }}
-      className="w-full h-[560px] bg-cover bg-bottom"
+      className="w-full h-[560px] bg-cover bg-bottom md:h-[380px] md:bg-center"
     >
       <a
         href="#"

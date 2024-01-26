@@ -11,7 +11,10 @@ const Portfolio = () => {
   if (error) return <Error error={error} />;
   if (data)
     return (
-      <section className="grid grid-cols-3 gap-8 mb-48">
+      <section
+        className="grid grid-cols-3 gap-8 mb-48 
+      md:grid-cols-2 sm:grid-cols-1 sm:mb-24 2sm:px-4 2sm:gap-4"
+      >
         {data.portfolioData.map((item, index) => (
           <PortfolioItem key={index} data={item} />
         ))}
