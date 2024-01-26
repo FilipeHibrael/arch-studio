@@ -14,6 +14,12 @@ export default {
       fontFamily: {
         sans: 'League Spartan, sans-serif',
       },
+      gridTemplateColumns: {
+        footer: 'auto 1fr auto'
+      },
+      boxShadow: {
+        boxShadowFooter: 'inset -120px 0 0 0 white'
+      }
     },
     screens: {
       '2xl': { max: '1340px' },

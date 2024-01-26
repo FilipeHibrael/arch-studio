@@ -1,6 +1,5 @@
 import { Link, useLocation, useParams } from 'react-router-dom';
 import logo from '../assets/logo.svg';
-import NavLinks from '../components/NavLinks';
 import React from 'react';
 
 const Header = () => {
@@ -29,7 +28,34 @@ const Header = () => {
       <Link to="/">
         <img src={logo} alt="Arch Studio Logo" />
       </Link>
-      <NavLinks />
+      <nav>
+        <ul className="flex gap-12 text-xl ml-24 text-ColorDarkGrey">
+          <li>
+            <Link
+              className="py-4 hover:text-ColorDark transition-colors"
+              to="/portfolio"
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="py-4 hover:text-ColorDark transition-colors"
+              to="/about-us"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="py-4 hover:text-ColorDark transition-colors"
+              to="/contact"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
