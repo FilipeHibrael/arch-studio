@@ -7,8 +7,8 @@ const ContactForm = () => {
     event.preventDefault();
   }
   return (
-    <div className="flex gap-24 mb-48">
-      <h2 className="font-bold text-6xl max-w-60">Conntect with us</h2>
+    <div className="flex gap-24 mb-48 lg:gap-14 md:flex-col sm:mb-24 2sm:px-4">
+      <h2 className="font-bold text-6xl max-w-60 2sm:text-5xl">Conntect with us</h2>
       <div className="w-full">
         <form
           onSubmit={handleSubmit}
@@ -42,7 +42,7 @@ const ContactForm = () => {
           <textarea
             name="message"
             id="message"
-            cols={30}
+            cols={20}
             rows={4}
             placeholder="Message"
             className="resize-none border-b-2 border-ColorDark pb-4 px-4 

@@ -10,9 +10,9 @@ const ContactMap = ({ data }: { data: ISectionDetailsAndMap }) => {
   });
 
   return (
-    <div className="mb-48">
+    <div className="mb-48 sm:mb-24">
       <MapContainer
-        className="h-[540px] w-full"
+        className="h-[540px] w-full sm:h-[440px]"
         center={[
           data.defaultMap.coordinates.lat,
           data.defaultMap.coordinates.lng,
